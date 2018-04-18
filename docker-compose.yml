@@ -1,0 +1,23 @@
+version: "2"
+
+services:
+  hubot-matteruser:
+    build:
+     context: .
+     args:
+       hubot_owner: devops
+       hubot_name: marwanto
+       hubot_description: "Test Bot"
+    restart: always
+    user: hubot-matteruser
+    ports:
+      - "8080:8080"
+    environment:
+      - MATTERMOST_HOST=mattermost.micro.uii.id
+      - MATTERMOST_GROUP=devops
+      - MATTERMOST_USER=johnny-marwanto
+      - MATTERMOST_PASSWORD=buleblasteranjowo
+      - MATTERMOST_LOG_LEVEL=info
+      - MATTERMOST_USE_TLS=false
+      - MATTERMOST_TLS_VERIFY=false
+      - MATTERMOST_WSS_PORT=80

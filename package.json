@@ -1,0 +1,14 @@
+{
+  "name": "hubot-matteruser",
+  "version": "4.4.0",
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "~1.7.1"
+  },
+  "main": "./src/matteruser",
+  "dependencies": {
+    "mattermost-client": "^4.4.0",
+    "parent-require": "^1.0.0",
+    "q": "^1.4.1"
+  }
+}
